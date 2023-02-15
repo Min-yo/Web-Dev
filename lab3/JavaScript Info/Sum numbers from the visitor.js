@@ -1,0 +1,1 @@
+alert(+prompt("a?", 0) + +prompt("b?", 0))

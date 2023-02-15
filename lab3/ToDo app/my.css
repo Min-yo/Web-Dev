@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: rgb(71, 69, 69);
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    padding:2em 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    padding: 2em 1em;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+h1{
+    padding-bottom: 10px;
+}
+.list{
+    /* border: 2.5px black solid; */
+    padding: 10px 20px;
+    width:100%;
+    max-width: 1000px;
+}
+ul{
+    padding:0;
+}
+li{
+    border: 2.5px rgb(100, 100, 100) solid;
+    padding:10px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    
+}
+#add-task-input{
+    margin: 0;
+    background-color: rgb(43, 43, 43);
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+#add-task{
+    display:flex;
+    justify-content: space-between;
+}
+#add-task-submit{
+    font-size: 16px;
+    background-color: rgb(58, 58, 58);
+    border-color: rgb(141, 141, 141);
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.checked{
+    background-color: rgb(53, 53, 53);
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 7px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+li span.close {
+    position:absolute;
+    text-decoration:none;
+    right: 0;
+    top: 0;
+    padding: 8px 16px 8px 16px;
+}
